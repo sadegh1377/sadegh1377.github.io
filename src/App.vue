@@ -1,32 +1,28 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
+  <v-app>
+    <NaveBar/>
+    <v-main class="main">
+      <router-view/>
+    </v-main>
+    <SemiFooter/>
+  </v-app>
 </template>
 
+<script>
+
+import NaveBar from "@/components/NaveBar";
+import SemiFooter from "@/components/SemiFooter";
+
+export default {
+  name: 'App',
+  components: {SemiFooter, NaveBar},
+  data: () => ({
+    //
+  }),
+};
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.main{
+  background-color: #f1f1f1;
 }
 </style>
