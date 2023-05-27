@@ -20,13 +20,15 @@
                         <v-card-text class="body-1 summary" v-html="$t('homePage.summary')">
                         </v-card-text>
                         <v-card-actions>
-                            <a href="https://github.com/sadegh1377" target="_blank">
+                            <a href="https://github.com/sadegh1377" target="_blank"
+                               title="GitHub">
                                 <v-icon class="mr-2">mdi-github</v-icon>
                             </a>
-                            <a href="https://www.linkedin.com/in/sadegh-hadipour-b3b62a192/" target="_blank">
+                            <a href="https://www.linkedin.com/in/sadegh-hadipour-b3b62a192/" target="_blank"
+                               title="Linkedin">
                                 <v-icon class="mr-2">mdi-linkedin</v-icon>
                             </a>
-                            <v-icon :class="{'mr-2': $i18n.locale === 'fa'}">mdi-phone</v-icon>
+                            <v-icon :class="{'mr-2': $i18n.locale === 'fa'}" title="Phone Number">mdi-phone</v-icon>
                             <span class="body-1">{{ $t("homePage.phoneNumber") }}</span>
                         </v-card-actions>
                     </v-card>
@@ -40,55 +42,8 @@
                     <v-card
                         class="pa-4"
                         outlined
-                        tile>
-                        I am a front-end developer with over 4 years of experience in designing and developing
-                        responsive websites and web applications. Proficient in HTML, CSS, JavaScript, and various
-                        front-end frameworks such as Vue, Angular, and React.
-                        Experienced in agile development methodology, and familiar with version
-                        control tools such as Git. Strong communication and collaboration skills, and able to
-                        work effectively in a team environment.
-                        <br>
-                        <br>
-                        <b>Technical Skills:</b>
-                        <br>
-                        <ul>
-                            <li>Languages: HTML, CSS, JavaScript</li>
-                            <li>Frameworks: Vue, Angular, React, Bootstrap, TailWindCss</li>
-                            <li>Other: Responsive design, cross-browser compatibility, accessibility standards</li>
-                        </ul>
-                        <br>
-                        <br>
-                        <b>Work Experience:</b>
-                        <p class="body-2 font-italic">
-                            Front-End Developer
-                            <br>
-                            Filio Company | Jan 2022 - Aug 2022
-                        </p>
-                        <ul>
-                            <li>Collaborate with designers and back-end developers to create responsive websites and web
-                                applications using Vue, quasar and other front-end technologies.
-                            </li>
-                            <li>Implement designs and user interfaces using HTML, CSS, and JavaScript, while ensuring
-                                cross-browser compatibility and accessibility.
-                            </li>
-                            <li>Develop and maintain code libraries, style guides, and other documentation to ensure
-                                consistency and code reusability.
-                            </li>
-                            <li>Participate in code reviews and provide feedback on coding best practices and
-                                optimization techniques.
-                            </li>
-                            <li>Troubleshoot issues related to front-end development, and work with the team to resolve
-                                bugs and performance issues.
-                            </li>
-                        </ul>
-                        <br>
-                        <br>
-                        <b>Education:</b>
-                        <p class="body-2 font-italic">
-                            Bachelor's degree in Computer Engineering
-                            <br>
-                            Shahrood University of Technology| Sep 2017 - Jan 2022
-                        </p>
+                        tile
+                        v-html="$t('homePage.about')">
                     </v-card>
                 </v-col>
             </v-row>
@@ -128,5 +83,4 @@ export default {
 .lineHeight {
     line-height: 1.2 !important;
 }
-
 </style>
