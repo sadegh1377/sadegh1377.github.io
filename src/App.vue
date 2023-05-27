@@ -29,7 +29,7 @@ export default {
 }
 
 .main {
-  font-family: iranSans, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "iranSans", Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f1f1f1;
