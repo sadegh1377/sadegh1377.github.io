@@ -1,5 +1,5 @@
 <template>
-  <div class="ma-15 d-flex flex-row flex-wrap justify-center">
+  <div class="ma-15 npm">
     <v-hover v-slot="{ hover }" class="hover mr-5 mb-5" v-for="i in 30" :key="i">
       <v-card
           class=""
