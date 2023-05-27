@@ -12,7 +12,11 @@
                         class="pa-2"
                         outlined
                         tile>
-                        <img class="profileImage elevation-7" src="../assets/profilePhoto.jpg" alt="Profile Image">
+                        <img class="profileImage elevation-5" src="../assets/profilePhoto.jpg" alt="Profile Image">
+                        <v-card-title class="justify-center pt-2">
+                            {{ $t('homePage.name') }}
+                        </v-card-title>
+                        <v-card-subtitle class="">{{ $t('homePage.occupation') }}</v-card-subtitle>
                     </v-card>
                 </v-col>
                 <v-col
@@ -46,8 +50,8 @@ export default {
 .profileImage {
     display: inline-block;
     margin: 0 auto;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border: 1px solid gray;
     border-radius: 50% !important;
     aspect-ratio: auto 100 / 100;
