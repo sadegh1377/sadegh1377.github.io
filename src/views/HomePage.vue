@@ -1,31 +1,30 @@
 <template>
     <div class="text-center mt-15 homePage">
         <v-container class="grey lighten-5">
-            <v-row >
+            <v-row>
                 <v-col
-                        cols="12"
-                        xs="6"
-                        sm="5"
-                        md="4"
+                    cols="12"
+                    xs="6"
+                    sm="5"
+                    md="4"
                 >
                     <v-card
-                            class="pa-2"
-                            outlined
-                            tile
-                    >
-                        .col-6 .col-md-4
+                        class="pa-2"
+                        outlined
+                        tile>
+                        <img class="profileImage elevation-7" src="../assets/profilePhoto.jpg" alt="Profile Image">
                     </v-card>
                 </v-col>
                 <v-col
-                        cols="12"
-                        xs="6"
-                        sm="7"
-                        md="8"
+                    cols="12"
+                    xs="6"
+                    sm="7"
+                    md="8"
                 >
                     <v-card
-                            class="pa-2"
-                            outlined
-                            tile
+                        class="pa-2"
+                        outlined
+                        tile
                     >
                         .col-12 .col-sm-6 .col-md-8
                     </v-card>
@@ -50,7 +49,7 @@ export default {
     width: 200px;
     height: 200px;
     border: 1px solid gray;
-    border-radius: 50%;
+    border-radius: 50% !important;
     aspect-ratio: auto 100 / 100;
 }
 
