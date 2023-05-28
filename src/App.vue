@@ -1,7 +1,7 @@
 <template>
     <v-app id="app">
         <NaveBar/>
-        <v-main class="main">
+        <v-main class="secondary">
             <router-view/>
         </v-main>
         <SemiFooter/>
@@ -35,7 +35,4 @@ export default {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.main {
-    background-color: #f1f1f1;
-}
 </style>
