@@ -1,6 +1,6 @@
 <template>
-    <div class="text-center mt-15 homePage">
-        <v-container class="grey lighten-5">
+    <div class="text-center mt-15 mb-15 homePage">
+        <v-container class="third rounded">
             <v-row>
                 <v-col
                     cols="12"
@@ -9,7 +9,7 @@
                     md="4"
                 >
                     <v-card
-                        class="pa-2"
+                        class="pa-2 rounded"
                         outlined
                         tile>
                         <img class="profileImage elevation-5" src="../assets/profilePhoto.jpg" alt="Profile Image">
@@ -40,7 +40,7 @@
                     sm="7"
                     md="8">
                     <v-card
-                        class="pa-4"
+                        class="pa-4 rounded"
                         outlined
                         tile
                         v-html="$t('homePage.about')">
