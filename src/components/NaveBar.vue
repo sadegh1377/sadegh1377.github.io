@@ -1,7 +1,7 @@
 <template>
     <v-app-bar
         app
-        class="primary"
+        class="navbar"
         dark
     >
         <div class="d-flex align-center">
@@ -75,7 +75,17 @@ export default {
     },
     methods: {
         changeLocale() {
-            i18n.locale = this.selectedLang
+            if (i18n.locale === 'en') {
+                localStorage.removeItem('lang')
+                localStorage.setItem("lang", 'fa')
+                i18n.locale = 'fa'
+                this.selectedLang = 'fa'
+            } else {
+                localStorage.removeItem('lang')
+                localStorage.setItem("lang", 'en')
+                i18n.locale = 'en'
+                this.selectedLang = 'en'
+            }
             this.$vuetify.rtl = !this.$vuetify.rtl
         },
         goto(routeName) {
@@ -84,9 +94,42 @@ export default {
             }
         },
         toggleDarkMode: function () {
-            this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-            this.darkMode = !this.darkMode;
+
+            if (this.$vuetify.theme.dark) {
+                this.$vuetify.theme.dark = false
+                // localStorage.removeItem('theme')
+                // localStorage.setItem("theme", 'lightMode')
+                this.darkMode = false;
+            } else {
+                this.$vuetify.theme.dark = true
+                // localStorage.removeItem('theme')
+                // localStorage.setItem("theme", 'darkMode')
+                this.darkMode = true;
+            }
         }
+    },
+    created() {
+        let lang = localStorage.getItem("lang");
+        // let theme = localStorage.getItem("theme")
+        if (lang) {
+            if (lang === 'fa') {
+                this.selectedLang = 'fa'
+                this.$vuetify.rtl = true
+            } else {
+                this.selectedLang = 'en'
+                this.$vuetify.rtl = false
+            }
+            i18n.locale = lang
+        }
+        // if (theme){
+        //     if (theme === 'darkMode'){
+        //         this.$vuetify.theme.dark = true
+        //         this.darkMode = true;
+        //     }else {
+        //         this.$vuetify.theme.dark = false
+        //         this.darkMode = false;
+        //     }
+        // }
     }
 }
 </script>
@@ -97,7 +140,7 @@ export default {
 }
 
 .logo a {
-    color: #d1e7ff;
+    color: #FFFBF5;
     text-decoration: none;
 }
 
