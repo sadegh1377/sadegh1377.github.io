@@ -24,7 +24,7 @@
             dense
             class=" mr-5 my-auto"
             color="white"
-            :value="darkMode"
+            :input-value="darkMode"
             @change="toggleDarkMode"
             :label="`${switchLabel}`"
         ></v-switch>
@@ -97,20 +97,20 @@ export default {
 
             if (this.$vuetify.theme.dark) {
                 this.$vuetify.theme.dark = false
-                // localStorage.removeItem('theme')
-                // localStorage.setItem("theme", 'lightMode')
+                localStorage.removeItem('theme')
+                localStorage.setItem("theme", 'lightMode')
                 this.darkMode = false;
             } else {
                 this.$vuetify.theme.dark = true
-                // localStorage.removeItem('theme')
-                // localStorage.setItem("theme", 'darkMode')
+                localStorage.removeItem('theme')
+                localStorage.setItem("theme", 'darkMode')
                 this.darkMode = true;
             }
         }
     },
     created() {
         let lang = localStorage.getItem("lang");
-        // let theme = localStorage.getItem("theme")
+        let theme = localStorage.getItem("theme")
         if (lang) {
             if (lang === 'fa') {
                 this.selectedLang = 'fa'
@@ -121,15 +121,15 @@ export default {
             }
             i18n.locale = lang
         }
-        // if (theme){
-        //     if (theme === 'darkMode'){
-        //         this.$vuetify.theme.dark = true
-        //         this.darkMode = true;
-        //     }else {
-        //         this.$vuetify.theme.dark = false
-        //         this.darkMode = false;
-        //     }
-        // }
+        if (theme) {
+            if (theme === 'darkMode') {
+                this.$vuetify.theme.dark = true
+                this.darkMode = true;
+            } else {
+                this.$vuetify.theme.dark = false
+                this.darkMode = false;
+            }
+        }
     }
 }
 </script>
