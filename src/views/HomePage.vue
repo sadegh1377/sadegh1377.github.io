@@ -19,6 +19,64 @@
                         <v-card-subtitle class="">{{ $t('homePage.occupation') }}</v-card-subtitle>
                         <v-card-text class="body-1 summary" v-html="$t('homePage.summary')">
                         </v-card-text>
+                        <v-card-title class="" style="text-align: left">
+                            {{ $t("homePage.skillsTitle") }}
+                        </v-card-title>
+                        <v-card-text style="text-align: left" class="d-flex justify-start ">
+                            <ul>
+                                <li class="body-1">JavaScript</li>
+                                <li class="body-1">VueJs</li>
+                                <li class="body-1">VueRouter</li>
+                                <li class="body-1">VuetifyJs</li>
+                                <li class="body-1">Quasar</li>
+                                <li class="body-1">NuxtJs</li>
+                                <li class="body-1">Angular</li>
+                                <li class="body-1">React</li>
+                                <li class="body-1">HTML</li>
+                                <li class="body-1">CSS</li>
+                                <li class="body-1">Bootstrap</li>
+                                <li class="body-1">TailWindCss</li>
+                                <li class="body-1">Figma</li>
+                            </ul>
+                            <ul>
+                                <li class="body-1">NodeJs</li>
+                                <li class="body-1">ExpressJs</li>
+                                <li class="body-1">MongoDB</li>
+                                <li class="body-1">Mongoose</li>
+                                <li class="body-1">Firebase</li>
+                                <li class="body-1">ChartJs</li>
+                                <li class="body-1">Git</li>
+                                <li class="body-1">i18n</li>
+                            </ul>
+                        </v-card-text>
+                        <v-card-title class="" style="text-align: left">
+                            {{ $t("homePage.otherSkillsTitle") }}
+                        </v-card-title>
+                        <v-card-text :class="{'text-left': $i18n.locale === 'en','text-right': $i18n.locale === 'fa'}"
+                                     v-html="$t('homePage.otherSkills')">
+                        </v-card-text>
+                        <v-card-title class="" style="text-align: left">
+                            {{ $t("homePage.projectsTitle") }}
+                        </v-card-title>
+                        <v-card-text>
+                            <ul>
+                                <li><a href="https://github.com/sadegh1377/news-client" target="_blank">news-client</a>
+                                </li>
+                                <li><a href="https://github.com/sadegh1377/ecommProject"
+                                       target="_blank">ecommProject</a>
+                                </li>
+                                <li><a href="https://github.com/sadegh1377/movie-details"
+                                       target="_blank">movie-details</a>
+                                </li>
+                            </ul>
+                        </v-card-text>
+                        <v-card-title class="" style="text-align: left">
+                            {{ $t("homePage.educationHistoryTitle") }}
+                        </v-card-title>
+                        <v-card-text :class="{'text-left': $i18n.locale === 'en','text-right': $i18n.locale === 'fa'}"
+                                     v-html="$t('homePage.educationHistory')">
+
+                        </v-card-text>
                         <v-card-actions>
                             <a href="https://github.com/sadegh1377" target="_blank"
                                title="GitHub">
@@ -80,7 +138,15 @@ export default {
     text-align: justify;
 }
 
+li {
+    text-align: justify;
+}
+
 .lineHeight {
     line-height: 1.2 !important;
+}
+
+.darkLinks {
+    color: #FFFBF5 !important;
 }
 </style>
