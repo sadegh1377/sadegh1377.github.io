@@ -17,13 +17,13 @@
       </g>
     </svg>
     <div class="message-box">
-      <h1>404</h1>
-      <p class="text-h6">Page not found</p>
-      <div class="buttons-con">
-        <div class="action-link-wrap">
-          <a @click="homePage()" class="link-button">Home Page</a>
+        <h1>{{ $t('pageNotFound.errorNum') }}</h1>
+        <h2>{{ $t('pageNotFound.title') }}</h2>
+        <div class="buttons-con">
+            <div class="action-link-wrap">
+                <a @click="homePage()" class="link-button">{{ $t('pageNotFound.backToHomeBtn') }}</a>
+            </div>
         </div>
-      </div>
     </div>
   </div>
 </template>
@@ -60,6 +60,7 @@ svg {
 }
 
 .message-box {
+    text-align: center;
   height: 200px;
   width: 380px;
   position: absolute;
@@ -73,10 +74,16 @@ svg {
 }
 
 .message-box h1 {
-  font-size: 60px;
-  line-height: 46px;
-  margin-bottom: 40px;
-  color: #2F3242;
+    font-size: 60px;
+    line-height: 46px;
+    margin-bottom: 40px;
+    color: #2F3242;
+}
+.message-box h2 {
+    font-size: 30px;
+    line-height: 46px;
+    margin-bottom: 40px;
+    color: #2F3242;
 }
 
 p {

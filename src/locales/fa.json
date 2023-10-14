@@ -11,5 +11,10 @@
     "projectsTitle": "پروژه ها",
     "educationHistoryTitle": "تحصیلات",
     "educationHistory": "<span class=\"body-2\">لیسانس مهندسی کامپیوتر</span>\n                            <br>\n                            دانشگاه صنعتی شاهرود\n                            فارغ التحصیلی: ۱۴۰۰"
+  },
+  "pageNotFound": {
+    "errorNum": "۴۰۴",
+    "title": "صفحه یافت نشد",
+    "backToHomeBtn": "صفحه اصلی"
   }
 }

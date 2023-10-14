@@ -11,5 +11,10 @@
     "projectsTitle": "Projects",
     "educationHistoryTitle": "Education History",
     "educationHistory": "     <span class=\"body-2\">Bachelor's degree in Computer Engineering</span>\n                            <br>\n                            Shahrood University of Technology\n                            Year of Graduation: 2022"
+  },
+  "pageNotFound": {
+    "errorNum": "404",
+    "title": "Page not found",
+    "backToHomeBtn": "Home Page"
   }
 }
