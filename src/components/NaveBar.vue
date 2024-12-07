@@ -3,34 +3,36 @@
         app
         class="navbar"
         dark
+        dense
     >
         <div class="d-flex align-center">
             <v-img
                 @click="goto('/')"
                 alt="Vuetify Logo"
-                class="shrink mr-2 logo"
+                class="shrink mr-2 logo svg"
                 contain
-                src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+                src="../assets/logo.svg"
                 transition="scale-transition"
                 width="40"
             />
-            <h1 class="logo">
+            <h2 class="logo mt-1">
                 <router-link to="/">MSH</router-link>
-            </h1>
+            </h2>
         </div>
 
         <v-spacer></v-spacer>
         <v-switch
             dense
-            class=" mr-5 my-auto"
+            class=" mr-5 mt-3 my-auto"
             color="white"
             :input-value="darkMode"
             @change="toggleDarkMode"
             :label="`${switchLabel}`"
+            inset
         ></v-switch>
         <v-select
             color="secondary"
-            class="select mr-2"
+            class="select mt-3 mr-2"
             v-model="selectedLang"
             @change="changeLocale"
             :items="languages"
@@ -137,6 +139,9 @@ export default {
 <style scoped>
 .logo {
     cursor: pointer;
+}
+.svg{
+  height: 30px;
 }
 
 .logo a {
