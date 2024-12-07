@@ -1,7 +1,7 @@
 <template>
   <footer class="text-center text-lg-start ">
     <div class="text-center pa-3">
-      © 2023 Copyright:
+      © 2025 Copyright:
       <a href="https://github.com/sadegh1377" class="text-dark" target="_blank">MSH</a>
     </div>
   </footer>
