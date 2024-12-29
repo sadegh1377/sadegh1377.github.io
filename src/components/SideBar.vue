@@ -11,7 +11,12 @@
     <v-card-title class="justify-center pt-2">
       {{ $t('homePage.name') }}
     </v-card-title>
-    <v-card-subtitle class="">{{ $t('homePage.occupation') }}</v-card-subtitle>
+    <v-card-subtitle class="pb-0 body-2">
+      {{ $t('homePage.occupation') }}
+    </v-card-subtitle>
+    <v-card-subtitle class="pt-1 body-2">
+      {{ $t('homePage.location') }}
+    </v-card-subtitle>
     <v-card-text class="body-1 summary" v-html="$t('homePage.summary')">
     </v-card-text>
     <v-card-title class="" style="text-align: left">
