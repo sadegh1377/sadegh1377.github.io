@@ -7,8 +7,12 @@
     "phoneNumber": "+989118161416",
     "about": "Experienced front-end developer with over 4 years of expertise in designing and developing responsive\n              websites and web applications. Proficient in HTML, CSS, JavaScript, and various front-end frameworks such\n              as Vue, Angular, and React. Skilled in agile development methodology and familiar with version control\n              tools like Git. Strong communication and collaboration abilities, with a proven track record of effective\n              teamwork.",
     "workExperienceTitle": "Work Experience:",
+    "years": "yrs ",
+    "mounts": "mos",
+    "simagarSummary": "<a class=\"darkLinks\" href=\"https://simagar.com/\" target=\"_blank\">Simagar</a> A leading and creative company in the field of information technology and the production of new startups",
+    "simagarDuration": "Jan 2025 to present",
     "freelance": "Freelance",
-    "secondFreeLanceDuration": "Oct 2022 to present (2 year 2 mos)",
+    "secondFreeLanceDuration": "Oct 2022 to Jan 2025 (2 yrs 4 mos)",
     "secondFreelanceDetail": {
       "1": "Worked with some other JavaScript frameworks such as Angular, React, Vuetify.js, and Chart.js.",
       "2": "Developed multi-language websites using i18n for localization.",
