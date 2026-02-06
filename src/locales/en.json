@@ -2,9 +2,10 @@
   "homePage": {
     "name": "M.Sadegh Hadipour",
     "occupation": "FrontEnd Developer",
+    "location": "Tehran - Pasdaran",
     "summary": "A highly skilled and experienced front-end developer with over 4 years of experience in designing and developing responsive websites and web applications.",
     "phoneNumber": "+989118161416",
-    "about": "Experienced front-end developer with over 4 years of expertise in designing and developing responsive\n              websites and web applications. Proficient in HTML, CSS, JavaScript, and various front-end frameworks such\n              as Vue, Angular, and React. Skilled in agile development methodology and familiar with version control\n              tools like Git. Strong communication and collaboration abilities, with a proven track record of effective\n              teamwork.",
+    "about": "Frontend Developer with 5 years of experience designing and implementing web application architectures from scratch to production deployment. Specialized in Vue (Options API & Composition API), Nuxt, and advanced TypeScript, with a strong focus on scalable architecture, performance optimization, and development of SSR and SPA applications.\n\nExperienced in building e-commerce platforms, online booking systems, course sales platforms, and educational applications, including deployment and server management on Windows Server (IIS).",
     "workExperienceTitle": "Work Experience:",
     "freelance": "Freelance",
     "secondFreeLanceDuration": "Oct 2022 to present (2 year 2 mos)",
@@ -14,7 +15,7 @@
       "3": "Enhanced the <a class=\"darkLinks\" href=\"https://2cgallery.com/\" target=\"_blank\">2cgallery</a> site, making it responsive for both Persian and English versions.",
       "4": "Redesigned <a class=\"darkLinks\" href=\"https://hitalki.org/\" target=\"_blank\">hitalki</a>'s  teacher page section and added features to its management panel."
     },
-    "frontDeveloper" : "Front Developer",
+    "frontDeveloper": "Front Developer",
     "filioSummary": "<a class=\"darkLinks\" href=\"https://www.filio.io/\" target=\"_blank\">Filio™</a> simplifies saving and documenting site photos and\n              videos for construction, inspection and more.",
     "filioDuration": "Dec 2021 to Oct 2022 (10 mos)",
     "filioDetail": {
