@@ -7,8 +7,12 @@
     "phoneNumber": "+989118161416",
     "about": "Frontend Developer with 5 years of experience designing and implementing web application architectures from scratch to production deployment. Specialized in Vue (Options API & Composition API), Nuxt, and advanced TypeScript, with a strong focus on scalable architecture, performance optimization, and development of SSR and SPA applications.\n\nExperienced in building e-commerce platforms, online booking systems, course sales platforms, and educational applications, including deployment and server management on Windows Server (IIS).",
     "workExperienceTitle": "Work Experience:",
+    "years": "yrs ",
+    "mounts": "mos",
+    "simagarSummary": "<a class=\"darkLinks\" href=\"https://simagar.com/\" target=\"_blank\">Simagar</a> A leading and creative company in the field of information technology and the production of new startups",
+    "simagarDuration": "Jan 2025 to present",
     "freelance": "Freelance",
-    "secondFreeLanceDuration": "Oct 2022 to present (2 year 2 mos)",
+    "secondFreeLanceDuration": "Oct 2022 to Jan 2025 (2 yrs 4 mos)",
     "secondFreelanceDetail": {
       "1": "Worked with some other JavaScript frameworks such as Angular, React, Vuetify.js, and Chart.js.",
       "2": "Developed multi-language websites using i18n for localization.",
