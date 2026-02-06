@@ -3,7 +3,7 @@
     "name": "M.Sadegh Hadipour",
     "occupation": "FrontEnd Developer",
     "location": "Tehran - Pasdaran",
-    "summary": "A highly skilled and experienced front-end developer with over 4 years of experience in designing and developing responsive websites and web applications.",
+    "summary": "A highly skilled and experienced front-end developer with over 5 years of experience in designing and developing responsive websites and web applications.",
     "phoneNumber": "+989118161416",
     "about": "Frontend Developer with 5 years of experience designing and implementing web application architectures from scratch to production deployment. Specialized in Vue (Options API & Composition API), Nuxt, and advanced TypeScript, with a strong focus on scalable architecture, performance optimization, and development of SSR and SPA applications.\n\nExperienced in building e-commerce platforms, online booking systems, course sales platforms, and educational applications, including deployment and server management on Windows Server (IIS).",
     "workExperienceTitle": "Work Experience:",
@@ -11,6 +11,17 @@
     "mounts": "mos",
     "simagarSummary": "<a class=\"darkLinks\" href=\"https://simagar.com/\" target=\"_blank\">Simagar</a> A leading and creative company in the field of information technology and the production of new startups",
     "simagarDuration": "Jan 2025 to present",
+    "simagarDetail": {
+      "1": "Designed and architected frontend projects from scratch.",
+      "2": "Implemented e-commerce systems with advanced order processing, payment workflows, and inventory management.n",
+      "3": "Developed a laboratory booking system with complex state management and dynamic status handling.n",
+      "4": "Built a language learning platform with user management and role-based access control.",
+      "5": "Implemented a course sales system with complete purchase and payment flows.",
+      "6": "Optimized application performance using Lazy Loading and Code Splitting techniques.",
+      "7": "Collaborated closely with backend teams to design and integrate efficient APIs.",
+      "8": "Deployed applications on Windows Server and managed IIS configurations.",
+      "9": "Maintained, supported, and enhanced production systems in live environments."
+    },
     "freelance": "Freelance",
     "secondFreeLanceDuration": "Oct 2022 to Jan 2025 (2 yrs 4 mos)",
     "secondFreelanceDetail": {

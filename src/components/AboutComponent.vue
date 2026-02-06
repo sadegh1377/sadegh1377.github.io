@@ -65,6 +65,10 @@ export default {
         <span v-if="totalMonths !== 0 && totalMonths !== '۰'">{{ totalMonths }} {{ $t("homePage.mounts") }}</span>
         <span>)</span>
                             </div>
+      <ul class="px-5 my-3 body-2">
+        <li v-for="(detail, index) in $t('homePage.simagarDetail')" :key="index" v-html="detail">
+        </li>
+      </ul>
     </div>
     <!--  second Free lance  -->
     <p class="body-2 ">

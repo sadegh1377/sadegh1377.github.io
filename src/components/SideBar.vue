@@ -60,7 +60,7 @@
     </v-card-title>
     <v-card-text>
       <ul>
-        <li><a href="https://github.com/sadegh1377/news-client" target="_blank">news-client</a>
+        <li><a href="https://rayalingo.com/" target="_blank">RayaLingo</a>
         </li>
         <li><a href="https://github.com/sadegh1377/ecommProject"
                target="_blank">ecommProject</a>
