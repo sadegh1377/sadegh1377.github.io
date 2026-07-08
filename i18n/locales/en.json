@@ -1,0 +1,89 @@
+{
+  "homePage": {
+    "name": "M.Sadegh Hadipour",
+    "occupation": "FrontEnd Developer",
+    "location": "Tehran - Pasdaran",
+    "summary": "A highly skilled and experienced front-end developer with over 4 years of experience in designing and developing responsive websites and web applications.",
+    "phoneNumber": "+989118161416",
+    "about": "Experienced front-end developer with over 4 years of expertise in designing and developing responsive websites and web applications. Proficient in HTML, CSS, JavaScript, and various front-end frameworks such as Vue, Angular, and React. Skilled in agile development methodology and familiar with version control tools like Git. Strong communication and collaboration abilities, with a proven track record of effective teamwork.",
+    "workExperienceTitle": "Work Experience:",
+    "years": "yrs ",
+    "mounts": "mos",
+    "simagarSummary": "{link} is a leading and creative company in the field of information technology and the production of new startups",
+    "simagarLinkText": "Simagar",
+    "simagarLinkUrl": "https://simagar.com/",
+    "simagarDuration": "Jan 2025 to present",
+    "freelance": "Freelance",
+    "secondFreeLanceDuration": "Oct 2022 to Jan 2025 (2 yrs 4 mos)",
+    "secondFreelanceDetail": [
+      "Worked with some other JavaScript frameworks such as Angular, React, Vuetify.js, and Chart.js.",
+      "Developed multi-language websites using i18n for localization.",
+      "Enhanced the {link} site, making it responsive for both Persian and English versions.",
+      "Redesigned {link}'s teacher page section and added features to its management panel."
+    ],
+    "secondFreelanceLinks": {
+      "2cgallery": { "text": "2cgallery", "url": "https://2cgallery.com/" },
+      "hitalki": { "text": "hitalki", "url": "https://hitalki.org/" }
+    },
+    "frontDeveloper": "Front Developer",
+    "filioSummary": "{link} simplifies saving and documenting site photos and videos for construction, inspection and more.",
+    "filioLinkText": "Filio™",
+    "filioLinkUrl": "https://www.filio.io/",
+    "filioDuration": "Dec 2021 to Oct 2022 (10 mos)",
+    "filioDetail": [
+      "Collaborate with designers and back-end developers to create responsive websites and web applications using Vue, quasar and other front-end technologies.",
+      "Implemented UI designs using HTML, CSS, and JavaScript, ensuring cross-browser compatibility and accessibility.",
+      "Working with google map api to add kml and kmz to the site’s map section.",
+      "Developed and maintained code libraries, style guides, and documentation for consistency and reusability.",
+      "Participate in code reviews and provide feedback on coding best practices and optimization techniques.",
+      "Troubleshoot issues related to front-end development, and work with the team to resolve bugs and performance issues."
+    ],
+    "firstFreeLanceDuration": "Jul 2020 to Dec 2021 (1 yr 5 mos)",
+    "firstFreelanceDetail": [
+      "Enhanced skills through experimental projects involving form validation, router guards, state management, and responsive design.",
+      "Developed backend systems using Node.js, Express.js, and MongoDB.",
+      "Projects available on {link}"
+    ],
+    "firstFreelanceLinks": {
+      "github": { "text": "GitHub", "url": "https://github.com/sadegh1377" }
+    },
+    "juniorTitle": "Junior",
+    "superzSummary": "Superz A search engine for supermarket products.",
+    "superzDuration": "Nov 2019 to Jul 2020 (8 mos)",
+    "superzDetail": [
+      "Implemented UI designs from the design team using Vue.js.",
+      "Add APIs to components."
+    ],
+    "internTitle": "Intern",
+    "internDuration": "Oct 2019 to Nov 2019 (1 mos)",
+    "internDetail": [
+      "Gained insights into the tech team's operations.",
+      "Coordinated communications between multiple departments."
+    ],
+    "skillsTitle": "Relevant Skills",
+    "skills": ["HTML", "CSS", "JavaScript", "TypeScript", "Vue.js", "React", "Angular", "Nuxt", "Next.js", "Tailwind CSS", "Git", "REST API"],
+    "otherSkillsTitle": "Other Skills",
+    "otherSkills": [
+      "Responsive design",
+      "Cross-browser compatibility",
+      "Accessibility standards",
+      "Team work"
+    ],
+    "projectsTitle": "Projects",
+    "projects": [
+      { "name": "Project 1", "description": "Short description", "url": "#" },
+      { "name": "Project 2", "description": "Short description", "url": "#" }
+    ],
+    "educationHistoryTitle": "Education History",
+    "education": {
+      "degree": "Bachelor's degree in Computer Engineering",
+      "university": "Shahrood University of Technology",
+      "graduation": "2022"
+    }
+  },
+  "pageNotFound": {
+    "errorNum": "404",
+    "title": "Page not found",
+    "backToHomeBtn": "Home Page"
+  }
+}

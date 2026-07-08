@@ -1,0 +1,105 @@
+/* ===== Color Variables ===== */
+:root {
+    --bg-primary: #0B0D12;
+    --bg-secondary: #13171F;
+    --bg-card: #1A1F2A;
+    --bg-card-hover: #222834;
+    --border-subtle: #2A3342;
+    --accent-cyan: #00E5FF;
+    --accent-purple: #A855F7;
+    --text-primary: #F1F5F9;
+    --text-secondary: #94A3B8;
+    --text-muted: #64748B;
+    --gradient-cyan-purple: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    --shadow-card: 0 10px 30px -10px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.03);
+    --shadow-card-hover: 0 20px 50px -10px rgba(0,0,0,0.9), 0 0 0 2px rgba(0,229,255,0.3);
+}
+
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ===== Container ===== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ===== Section Spacing ===== */
+section {
+    padding: 5rem 0;
+}
+
+.section-title {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin-bottom: 0.5rem;
+    background: var(--gradient-cyan-purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.section-subtitle {
+    color: var(--text-secondary);
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    margin-bottom: 2.5rem;
+}
+
+/* ===== Section Divider ===== */
+.divider {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-cyan), var(--accent-purple), transparent);
+    margin: 2rem 0;
+    filter: drop-shadow(0 0 8px rgba(0,229,255,0.3));
+}
+
+/* ===== Scroll Reveal ===== */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .container { padding: 0 1.5rem; }
+    section { padding: 3rem 0; }
+}
