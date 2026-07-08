@@ -1,7 +1,7 @@
 <template>
   <section class="hero">
     <div class="container hero-content">
-      <div class="hero-text">
+      <div class="order-2! md:order-1! hero-text">
         <h1>Hi, I'm <span class="highlight">M.Sadegh</span></h1>
         <p class="tagline">Frontend Developer · Vue/Nuxt Expert</p>
         <p class="bio">Building scalable, interactive web experiences with 5+ years of expertise.</p>
@@ -10,7 +10,7 @@
           <a href="#contact" class="btn-secondary">Contact Me</a>
         </div>
       </div>
-      <div class="hero-3d">
+      <div class="order-1! md:order-2! hero-3d">
         <ThreeBackground />
       </div>
     </div>
@@ -22,8 +22,8 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 4rem 0;
   position: relative;
+  padding: 4rem 0; /* Add vertical padding */
 }
 .hero-content {
   display: flex;
@@ -96,9 +96,30 @@
   position: relative;
 }
 @media (max-width: 768px) {
-  .hero-content { flex-direction: column; text-align: center; }
-  .hero-3d { width: 100%; height: 40vh; min-height: 200px; }
-  .bio { margin-left: auto; margin-right: auto; }
-  .cta-group { justify-content: center; }
+  .hero {
+    min-height: auto; /* Remove min-height on mobile */
+    align-items: flex-start;
+    padding: 2rem 0; /* Adjust padding on mobile */
+  }
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .hero-3d {
+    width: 100%;
+    height: 40vh;
+    min-height: 200px;
+  }
+  .bio {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-group {
+    justify-content: center;
+  }
+  .hero-text {
+    padding-top: 0.5rem;
+  }
 }
 </style>
