@@ -2,7 +2,9 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
     compatibilityDate: '2025-07-15',
+    ssr: true,
     app: {
+        baseURL: '/',
         head: {
             title: 'Mohammad Sadegh Hadipour – Frontend Developer',
             meta: [
@@ -48,6 +50,9 @@ export default defineNuxtConfig({
         plugins: [
             tailwindcss(),
         ],
+    },
+    nitro: {
+        preset: 'static',
     },
     css: ['~/assets/css/main.css'],
     devServer: {
