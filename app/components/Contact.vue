@@ -25,7 +25,9 @@
           <div class="form-group">
             <textarea id="message" v-model="form.message" rows="5" placeholder="Message" required></textarea>
           </div>
-          <button type="submit" class="btn-primary">Send Message</button>
+          <button type="submit" class="btn-primary" :disabled="isSubmitting">
+            {{ isSubmitting ? 'در حال ارسال...' : 'Send Message' }}
+          </button>
         </form>
       </div>
     </div>
@@ -34,12 +36,26 @@
 
 <script setup>
 const form = reactive({name: '', email: '', message: ''})
-const submitForm = () => {
-  // Handle submission (e.g., send to API)
-  console.log('Form submitted', form)
-  // Reset form
-  Object.assign(form, {name: '', email: '', message: ''})
-  alert('Thank you for your message!')
+const isSubmitting = ref(false)
+
+const toast = useToast()
+
+const submitForm = async () => {
+  isSubmitting.value = true
+  try {
+    await $fetch('/api/send-message', {
+      method: 'POST',
+      body: {...form},
+    })
+    Object.assign(form, {name: '', email: '', message: ''})
+
+    toast.success('Your message was sent successfully!', 'Success')
+  } catch (err) {
+    console.error(err)
+    toast.error('Failed to send the message. Please try again.', 'Error')
+  } finally {
+    isSubmitting.value = false
+  }
 }
 </script>
 
@@ -118,7 +134,7 @@ const submitForm = () => {
   padding: 0.8rem 2.5rem;
 }
 
-.location{
+.location {
   color: var(--text-primary);
 }
 

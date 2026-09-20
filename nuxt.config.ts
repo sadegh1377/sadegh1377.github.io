@@ -52,10 +52,15 @@ export default defineNuxtConfig({
         ],
     },
     nitro: {
-        preset: 'static',
+        preset: 'netlify',
     },
     css: ['~/assets/css/main.css'],
     devServer: {
         port: 3003
+    },
+
+    runtimeConfig: {
+        telegramBotToken: process.env.NUXT_TELEGRAM_BOT_TOKEN,
+        telegramChatId: process.env.NUXT_TELEGRAM_CHAT_ID,
     },
 })
