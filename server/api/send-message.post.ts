@@ -7,8 +7,11 @@ export default defineEventHandler(async (event) => {
     }
 
     const config = useRuntimeConfig()
-    const token = config.telegramBotToken
-    const chatId = config.telegramChatId
+    const telegramToken = config.telegramBotToken
+    const telegramChatId = config.telegramChatId
+
+    const baleToken = config.baleBotToken
+    const baleChatId = config.baleChatId
 
     const text = `📩 پیام جدید از پورتفولیو
 
@@ -17,18 +20,38 @@ export default defineEventHandler(async (event) => {
 📝 پیام:
 ${message}`
 
-    const telegramRes = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    const sendToTelegram = await fetch(`https://api.telegram.org/bot${telegramToken}/sendMessage`, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
-            chat_id: chatId,
+            chat_id: telegramChatId,
             text,
         }),
     })
 
-    if (!telegramRes.ok) {
-        throw createError({statusCode: 500, statusMessage: 'Something went wrong'})
+    const sendToBale = fetch(
+        `https://tapi.bale.ai/bot${baleToken}/sendMessage`,
+        {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({chat_id: baleChatId, text}),
+        }
+    )
+
+    const results = await Promise.allSettled([sendToTelegram, sendToBale])
+
+    const failed = []
+    for (const [i, result] of results.entries()) {
+        const platform = i === 0 ? 'Telegram' : 'Bale'
+        if (result.status === 'rejected' || !result.value.ok) {
+            failed.push(platform)
+        }
     }
 
-    return {success: true}
+    // اگه هر دو شکست خوردن، خطا بده
+    if (failed.length === results.length) {
+        throw createError({statusCode: 500, statusMessage: 'something went wrong.'})
+    }
+
+    return {success: true, failed}
 })
