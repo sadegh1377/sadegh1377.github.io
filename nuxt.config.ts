@@ -35,7 +35,7 @@ export default defineNuxtConfig({
             {code: 'fa', iso: 'fa-IR', name: 'Persian', file: 'fa.json', dir: "rtl",},
             {code: 'en', iso: 'en-US', name: 'English', file: 'en.json', dir: "ltr",},
         ],
-        defaultLocale: 'fa',
+        defaultLocale: 'en',
         detectBrowserLanguage: {
             useCookie: true,
             cookieKey: 'i18n_redirected',

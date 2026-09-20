@@ -7,7 +7,7 @@
       <div class="project-tags">
         <span v-for="tag in project.tags" :key="tag" class="tag">{{ tag }}</span>
       </div>
-      <a :href="project.link" class="card-link" target="_blank" rel="noopener">Case Study →</a>
+      <a :href="project.link" class="card-link" target="_blank" rel="noopener">Visit Live Site →</a>
     </div>
   </div>
 </template>
@@ -50,14 +50,19 @@ const props = defineProps<{
 
 .card-glow {
   position: absolute;
-  top: -2px;
-  left: 0;
-  right: 0;
-  height: 4px;
+  inset: 0;
+  border-radius: 16px;
+  padding: 1.5px;
   background: var(--gradient-cyan-purple);
   opacity: 0;
   transition: opacity 0.4s;
-  border-radius: 16px 16px 0 0;
+  pointer-events: none;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+  linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box,
+  linear-gradient(#fff 0 0);
+  mask-composite: exclude;
 }
 
 .card-content {

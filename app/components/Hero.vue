@@ -58,37 +58,7 @@
   gap: 1rem;
   flex-wrap: wrap;
 }
-.btn-primary, .btn-secondary {
-  padding: 0.8rem 2rem;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-  display: inline-block;
-  border: none;
-  cursor: pointer;
-}
-.btn-primary {
-  background: var(--gradient-cyan-purple);
-  color: #0B0D12;
-  box-shadow: 0 4px 15px rgba(0,229,255,0.4);
-}
-.btn-primary:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 8px 25px rgba(0,229,255,0.6);
-}
-.btn-primary:active {
-  transform: translateY(1px) scale(0.98);
-}
-.btn-secondary {
-  background: transparent;
-  color: var(--text-primary);
-  border: 2px solid var(--border-subtle);
-}
-.btn-secondary:hover {
-  border-color: var(--accent-cyan);
-  background: rgba(0,229,255,0.05);
-  transform: translateY(-3px);
-}
+
 .hero-3d {
   flex: 1;
   height: 60vh;

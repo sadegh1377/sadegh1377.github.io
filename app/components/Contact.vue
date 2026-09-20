@@ -7,7 +7,9 @@
         <div class="contact-info">
           <p><strong>Email</strong><br><a href="mailto:sadeghhadipour1@gmail.com">sadeghhadipour1@gmail.com</a></p>
           <p><strong>Phone</strong><br><a href="tel:09118161416">09118161416</a></p>
-          <p><strong>Location</strong><br>Tehran</p>
+          <p><strong>Location</strong><br>
+            <span class="location">Tehran</span>
+          </p>
           <div class="social-links">
             <a href="https://github.com/sadegh1377" class="social-link" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/sadegh-hadipour-b3b62a192/" class="social-link" target="_blank">LinkedIn</a>
@@ -114,6 +116,10 @@ const submitForm = () => {
 .contact-form .btn-primary {
   align-self: flex-start;
   padding: 0.8rem 2.5rem;
+}
+
+.location{
+  color: var(--text-primary);
 }
 
 @media (max-width: 768px) {
