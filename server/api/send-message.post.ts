@@ -1,9 +1,9 @@
 export default defineEventHandler(async (event) => {
     const body = await readBody(event)
-    const { name, email, message } = body
+    const {name, email, message} = body
 
     if (!name || !email || !message) {
-        throw createError({ statusCode: 400, statusMessage: 'همه فیلدها الزامی هستن' })
+        throw createError({statusCode: 400, statusMessage: 'Please fill out this field.'})
     }
 
     const config = useRuntimeConfig()
@@ -19,7 +19,7 @@ ${message}`
 
     const telegramRes = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
             chat_id: chatId,
             text,
@@ -27,8 +27,8 @@ ${message}`
     })
 
     if (!telegramRes.ok) {
-        throw createError({ statusCode: 500, statusMessage: 'ارسال پیام به تلگرام ناموفق بود' })
+        throw createError({statusCode: 500, statusMessage: 'Something went wrong'})
     }
 
-    return { success: true }
+    return {success: true}
 })

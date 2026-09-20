@@ -26,7 +26,7 @@
             <textarea id="message" v-model="form.message" rows="5" placeholder="Message" required></textarea>
           </div>
           <button type="submit" class="btn-primary" :disabled="isSubmitting">
-            {{ isSubmitting ? 'در حال ارسال...' : 'Send Message' }}
+            {{ isSubmitting ? 'Sending...' : 'Send Message' }}
           </button>
         </form>
       </div>
